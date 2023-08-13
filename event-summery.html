@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Button</title>
+</head>
+<body>
+    <h1>final event handler</h1>
+    <h3 id="change">change event</h3>
+    <button onclick="handleOnclick()">change button text</button>
+
+    <section>
+        <h3 id="change-2">all change</h3>
+        <button onclick="hitMe()">hit me</button>
+    </section>
+    <script>
+        function handleOnclick(){
+            const handlerStatus = document.getElementById('change');
+            handlerStatus.innerText = 'bambi bari ja';
+        }
+        function hitMe(){
+            const event = document.getElementById('change-2');
+            event.innerText = 'yes bro yes change';
+        }
+    </script>
+</body>
+</html>
