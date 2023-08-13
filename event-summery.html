@@ -11,8 +11,16 @@
     <button onclick="handleOnclick()">change button text</button>
 
     <section>
+        <!-- event adding -->
         <h3 id="change-2">all change</h3>
         <button onclick="hitMe()">hit me</button>
+        <!-- event listener -->
+        <button id="onclick-system">out off handler</button>
+        <section>
+            <h3 id="changeall">all beauty</h3>
+            <input type="text" name="" id="input-field">
+            <button id="update">upDate</button>
+        </section>
     </section>
     <script>
         function handleOnclick(){
@@ -23,6 +31,22 @@
             const event = document.getElementById('change-2');
             event.innerText = 'yes bro yes change';
         }
+
+
+        document.getElementById('onclick-system').addEventListener('click', function(){
+            const addButton = document.getElementById('change-2');
+            addButton.innerText= 'all change'; 
+        })
+
+
+        document.getElementById('update').addEventListener('click', function(){
+            const inputField = document.getElementById('input-field');
+            inputText = inputField.value;
+            const allItem = document.getElementById('changeall');
+            allItem.innerText=inputText;
+            inputField.value= "";
+
+        })  
     </script>
 </body>
 </html>
