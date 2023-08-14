@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Please add your comments</h1>
+    <div id="container">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, nesciunt illo. Sapiente ducimus incidunt eius id quos placeat porro provident reiciendis quam obcaecati repellat maiores eaque veritatis eligendi, voluptate iusto debitis autem perspiciatis aliquid deserunt beatae tempora deleniti sunt dicta. Non, corrupti totam? Fugit qui, placeat harum reiciendis commodi distinctio?
+
+        </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia aut alias voluptatem consectetur sit maxime error corrupti deserunt, eligendi praesentium nihil vitae eaque magnam quidem sed facere quos. Quis ex modi odit nostrum similique perferendis eveniet fuga, distinctio at sapiente eligendi vitae quam accusantium mollitia pariatur culpa, provident voluptatum obcaecati illum dolor quod. Fugit animi delectus voluptas aperiam mollitia. Rerum?
+
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores distinctio vero labore odit ullam illum nam ipsa accusamus alias adipisci necessitatibus veritatis in quis corporis ad soluta quod laboriosam tenetur ducimus, est natus, consectetur architecto. Illo ab iure beatae earum quo voluptatem suscipit, omnis in quidem, at neque voluptas. Perspiciatis saepe aliquam dolorum odio, consequatur error iusto, atque voluptates inventore similique ut veniam illum fugit nesciunt amet provident ipsa.
+
+        </p>
+    </div>
+    <div>
+        <textarea name="" id="new-comments" cols="120" rows="7"></textarea>
+        <br>
+        <button id="post">post</button>
+    </div>
+    <script>
+
+        document.getElementById('post').addEventListener('click', function(){
+
+            const texAriea = document.getElementById('new-comments');
+            
+            const inputText = texAriea.value;
+            
+            const commentsContainer = document.getElementById('container');
+            const p = document.createElement('p');
+            p.innerText= inputText;
+            console.log(inputText);
+            commentsContainer.appendChild(p)
+            texAriea.value= "";
+        })
+    </script>
+</body>
+</html>

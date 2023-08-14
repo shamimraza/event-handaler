@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mousemove blur focus keydown</title>
+</head>
+<body id="body-line">
+    <h1>Explore more event mouseEnter</h1>
+    <input type="text" name="" id="input-field">
+    <button id="enter-button">Enter Button</button>
+
+    <script>
+        
+        document.getElementById('enter-button').addEventListener('click', function(){
+            const inputField = document.getElementById('input-field');
+            const inputText = inputField.value;
+
+            const bodyLine = document.getElementById('body-line');
+            const p = document.createElement('p');
+            p.innerText= inputText;
+            bodyLine.appendChild(p)
+            inputField.value= "";
+           
+        })
+    </script>
+</body>
+</html>

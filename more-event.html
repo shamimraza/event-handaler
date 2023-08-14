@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>focus</title>
+</head>
+<body>
+    
+    <header>
+        <section>
+            <h1>all event---- blur, focus, keydown, keypress, keyup</h1>
+            <input type="text" name="" id="input-focus">
+            <button id="blur-focus">blur focus</button>
+        </section>
+    </header>
+
+    <script>
+    //     document.getElementById('blur-focus').addEventListener('focus', function(){
+    //     console.log('Event triangle inside the input field');
+    // })
+    // document.getElementById('blur-focus').addEventListener('blur', function(){
+    //     console.log('Event triangle inside the input field');
+    // })
+    // document.getElementById('input-focus').addEventListener('keydown', function(event){
+    //     console.log(event.target.value);
+    // })
+    // document.getElementById('input-focus').addEventListener('keypress', function(event){
+    //     console.log(event.target.value);
+    // })
+    document.getElementById('input-focus').addEventListener('keyup', function(event){
+        console.log(event.target.value);
+    })
+
+    </script>
+</body>
+</html>
